@@ -1,7 +1,9 @@
 # Firebase Studio
 
-App Name: LearnAI
-Core Features:
+#App Name: LearnAI
+
+#Core Features:
+
 AI Tutor: Allows users to type or speak questions and receive detailed answers, examples, and action steps powered by AI. The AI will be equipped with a tool to reason about its confidence levels for a given answer.
 Personalized Learning Paths: AI tracks user progress and suggests lessons, quizzes, and resources based on skill level.
 Document & Code Analysis: Users can upload documents, code snippets, or images for AI analysis and receive summaries, corrections, or suggestions.
