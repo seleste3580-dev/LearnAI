@@ -2,6 +2,8 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // Export static HTML for static hosting / Capacitor
+  output: 'export',
   typescript: {
     ignoreBuildErrors: true,
   },

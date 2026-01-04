@@ -1,0 +1,9 @@
+include ':app'
+include ':capacitor-android'
+project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
+// No local 'capacitor-cordova-android-plugins' project is present in this workspace.
+// include ':capacitor-cordova-android-plugins'
+// project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
+
+// capacitor.settings.gradle not provided by package; not applying it to avoid build error
+// apply from: 'capacitor.settings.gradle'

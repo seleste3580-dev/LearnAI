@@ -1,0 +1,2 @@
+// Apply Capacitor Android build logic from the installed package
+apply from: '../../node_modules/@capacitor/android/capacitor/build.gradle'
