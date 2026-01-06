@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import PWARegister from '@/components/PWARegister';
+import ErrorBoundary from '@/components/ErrorBoundary';
+import ErrorLoggerInit from '@/components/ErrorLoggerInit';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -27,7 +29,10 @@ export default function RootLayout({
         <link rel="icon" href="/icons/icon-192.svg" />
       </head>
       <body className={cn('font-body antialiased min-h-screen')}>
-        {children}
+        <ErrorBoundary>
+          <ErrorLoggerInit />
+          {children}
+        </ErrorBoundary>
         <Toaster />
         {/* Registers the service worker on client */}
         <PWARegister />

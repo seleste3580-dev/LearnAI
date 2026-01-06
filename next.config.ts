@@ -2,8 +2,9 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // Export static HTML for static hosting / Capacitor
-  output: 'export',
+  // Note: `output: 'export'` disabled to allow Server Actions during build
+  // (static export does not support Server Actions). Set back to 'export'
+  // when using static hosting / Capacitor if Server Actions are not used.
   typescript: {
     ignoreBuildErrors: true,
   },
