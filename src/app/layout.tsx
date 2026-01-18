@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import PWARegister from '@/components/PWARegister';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import ErrorLoggerInit from '@/components/ErrorLoggerInit';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Toaster />
         {/* Registers the service worker on client */}
         <PWARegister />
+        <SpeedInsights />
       </body>
     </html>
   );
