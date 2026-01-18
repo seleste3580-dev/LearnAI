@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import PWARegister from '@/components/PWARegister';
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Toaster />
         {/* Registers the service worker on client */}
         <PWARegister />
+        <SpeedInsights />
       </body>
     </html>
   );
